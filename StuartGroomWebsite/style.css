@@ -1,0 +1,241 @@
+﻿
+body {
+    
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+    text-decoration: none;
+    
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    position: relative;
+}
+
+
+.hero .text-box {
+    width: 60%;
+    margin: 50% auto; /*makes the textbox half way down and auto the center*/
+    color: black;
+}
+
+.text-box h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.text-box p1 {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.text-box p2 {
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.text-box .btn {
+    margin-top: 30px; /*how far away button is from text above (p2)*/
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px; /*how far the lines of button are from text*/
+    width: 130px;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #f44336;
+    background: transparent;
+    cursor: pointer;
+}
+
+.text-box button:hover {
+    background: #f44336;
+    color: white;
+}
+
+.sidebar {
+    height: 335px;
+    width: 60px;
+    background: #fff;
+    border-radius: 5px;
+    position: fixed;
+    top: 25%;
+    right: 50px;
+    transform: translateY(-75%);
+    text-align: center;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.side-text {
+    min-width: 0px;
+    height: 100%;
+    background: #f44336;
+    margin-right: 5px;
+    line-height: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    transition: 0.5s; /*this transitions the side-text coming out*/
+    text-align: center;
+}
+
+
+.icon {
+    min-width: 50px;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*make the icons red and spaced out nice*/
+.icon .fas {
+    font-size: 20px;
+    color: #f44336;
+    line-height: 50px;
+}
+
+.icon .fab {
+    font-size: 20px;
+    color: #f44336;
+    line-height: 50px;
+}
+
+.icon .far {
+    font-size: 20px;
+    color: #f44336;
+    line-height: 50px;
+}
+
+
+/*when hover make icon background red*/
+.icon-box:hover .icon {
+    background-color: #f44336;
+}
+
+/*when hover make icons white*/
+.icon-box:hover .icon .fas {
+    color: #fff;
+}
+
+.icon-box:hover .icon .fab {
+    color: #fff;
+}
+
+.icon-box:hover .icon .far {
+    color: #fff;
+}
+
+/*when hover make the sidetext come out*/
+.icon-box:hover .side-text {
+    min-width: 140px; /*min-width was 0px above, when hover we change it to make it visible*/
+}
+
+
+
+
+/*here starts social sidebar stuff*/
+/*here starts social sidebar stuff*/
+/*here starts social sidebar stuff*/
+/*here starts social sidebar stuff*/
+/*here starts social sidebar stuff*/
+
+.wrapper {
+    display: flex;
+    position: fixed;
+}
+
+/*here we chanaged to make pos fixed and bottom = 0, height = 200 to make it fit the bottom*/
+.wrapper .socialSidebar {
+    position: fixed;
+    bottom: 0;
+    width: 100px;
+    height: 220px;
+    padding: 30px 0;
+}
+
+.wrapper .socialSidebar .vertical {
+    border-left: 2px solid black;
+    height: 100px;
+    color: black;
+    width: 100px;
+    margin-left: 17px; /*centers vertical line with icons*/
+}
+
+/*these 3 make the different icons all the same size>?*/
+
+.wrapper .socialSidebar ul li a .far {
+    width: 25px;
+}
+
+.wrapper .socialSidebar ul li a .fab {
+    width: 25px;
+}
+
+
+/*makes the icon glow when hovered over*/
+.wrapper .socialSidebar ul li:hover a {
+    color: #f44336;
+    /*background: blue;*/
+    top: 50px;
+    transform: scale(1.5); /*enlarges icon by 150% when hovered over
+*/
+}
+
+
+/*sets color of the icon*/
+.wrapper .socialSidebar a {
+    bottom: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+}
+
+.anchor {       /*used to center the screen on different sections when href links are clicked (sidebar icons)*/
+    display: block;
+    transform: translateY(-50vh);
+    visibility: hidden;
+}
+
+/*second box second box second box second box second box second box second box second box */
+/*second box second box second box second box second box second box second box second box */
+/*second box second box second box second box second box second box second box second box */
+/*second box second box second box second box second box second box second box second box */
+/*second box second box second box second box second box second box second box second box */
+
+
+
+
+
+
+/*third box third box third box third box third box third box third box */
+/*third box third box third box third box third box third box third box */
+/*third box third box third box third box third box third box third box */
+/*third box third box third box third box third box third box third box */
+
