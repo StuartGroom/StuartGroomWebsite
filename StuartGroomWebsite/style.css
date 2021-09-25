@@ -18,6 +18,7 @@ body {
     font-family: sans-serif;
     text-decoration: none;
     background-color: var(--primary-color);
+    overflow-x:hidden;
 }
 
 .hero {
@@ -33,7 +34,7 @@ body {
 
 .hero .text-box {
     width: 60%;
-    margin: 50% auto; /*makes the textbox half way down and auto the center*/
+    margin: 45vh auto; /*makes the textbox half way down and auto the center*/
     color: var(--secondary-color);
 }
 
@@ -42,15 +43,6 @@ body {
     font-size: 50px;
 }
 
-.text-box p1 {
-    line-height: 24px;
-    margin-bottom: 20px;
-}
-
-.text-box p2 {
-    line-height: 24px;
-    margin-bottom: 40px;
-}
 
 .text-box .btn {
     margin: 30px 0; /*how far away button is from text above (p2)*/
@@ -72,6 +64,25 @@ body {
     background: #f44336;
     color: var(--primary-color);
 }
+
+.aboutMeP{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.aboutMeP img{
+    
+    max-width: 300px;
+}
+
+.aboutMeP p2{
+    margin-left: 20px;
+}
+
+
+
+
 
 .sidebar {
     height: 335px;
@@ -224,21 +235,391 @@ body {
 }
 
 
+/* --------------------------------- project boxes --------------------------------- */
+/* --------------------------------- project boxes --------------------------------- */
+/* --------------------------------- project boxes --------------------------------- */
+/* --------------------------------- project boxes --------------------------------- */
+/* --------------------------------- project boxes --------------------------------- */
+
+.projectsTitle {
+    font-size: 42px; 
+    font-weight: bolder;
+    text-align: center;
+}
+
+.horizontalLine {
+    border-top: 5px solid var(--secondary-color);
+    width: 240px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center; /*makes individual boxes centered*/
+    font-size: 0; /*added to get rid of spacing between project boxes*/
+    
+}
+
+.gallery img {
+    height: 300px;
+    width: 300px; 
+}
+
+.gallery .projectBox {
+    width: 300px;
+    position: relative;
+    display: inline-block;
+    /*margin: 10px; /*can be used to make the photos spaced out*/
+}
 
 
-/*second box second box second box second box second box second box second box second box */
-/*second box second box second box second box second box second box second box second box */
-/*second box second box second box second box second box second box second box second box */
-/*second box second box second box second box second box second box second box second box */
-/*second box second box second box second box second box second box second box second box */
+.gallery .projectBox img {
+    width: 100%;
+    border: 2px solid var(--secondary-color);
+    transition-duration: 0.5s;
+    opacity: 1; 
+}
+
+/*when hover over image, the image disappears*/
+.gallery .projectBox:hover img {
+    opacity: 0;
+}
+
+.gallery .projectBox .span {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+
+}
+
+.gallery .projectBox .span p1 {
+    margin: auto;
+    font-size: 24px;
+    line-height: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.gallery .projectBox .span p2 {
+    margin: auto;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.gallery .projectBox:hover .span {
+    opacity: 1; 
+    display: block;
+
+}
+
+.gallery .projectBox .span a {
+    text-decoration: none;
+}
+
+
+/*modal open buttons*/
+.gallery .projectBox .span .modal-open {
+    display: flex; /*makes layout nice :) */
+    width: 150px;
+    padding: 10px; /*how far the lines of button are from text*/
+    margin: 30px auto;
+    color: var(--secondary-color);
+    font-size: 20px;
+    outline: none;
+    border: 2px solid #f44336;
+    background: transparent;
+    cursor: pointer;
+}
+
+.gallery .projectBox .span .modal-open:hover {
+    color: var(--secondary-color);
+    background: #f44336;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*                                   modal                                          */
+/* -------------------------------------------------------------------------------- */
+
+.modal {
+
+    /* maybe play around with minsize/maxsize to make this better reactive*/
+    width: 60%;
+    height: 80%;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 2; /*so appears on top of overlay*/
+    text-align: center;
+    background-color: white;
+    display: none; /*change to none  change back to none change back to none change back to none*/
+    
+}
+
+
+.modal.active {
+    display: flex; 
+}
+
+.modal .modal-content {
+    border-radius: 4px;
+    text-align: center;
+    
+   /* position: relative; */
+
+}
+
+/*header for modal*/
+.modal .modal-content .modal-header {
+
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.modal .modal-content .modal-header h2 {
+    text-decoration: underline;
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+
+
+/*modal close close button*/
+.modal .modal-header .modal-close {
+    float: right;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal .modal-header .modal-close:hover {
+    background-color: #f44336;
+    color: white;
+    
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*                              image scroller                                      */
+/* -------------------------------------------------------------------------------- */
+
+.modal .modal-content .modal-slideImg .slide_img{
+    position: absolute;
+    width: 100%;
+    height: 88%;
+    
+}
+
+input[type="radio"] { display: none; }  /* hides the inbuilt radio buttons (img selector circles) */
+
+.modal .modal-content .modal-slideImg .slide_img img{
+    height: inherit;
+    width: inherit;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.prev, .next{
+    width: 12%;
+    height: inherit;
+    position: absolute;
+    top:0; 
+    background-color: rgba(209, 209, 209, 0.2);
+    color:rgba(244, 244, 244,0);
+    z-index: 99;
+    transition: .45s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.next{
+    right:0;
+}
+.prev{
+    left:0;
+}
+
+label span{
+    position: absolute;
+    font-size: 100pt;
+    top: 35%;
+    transform: translate(-50%);
+    
+}
+
+.prev:hover, .next:hover{
+    transition: .3s;
+    background-color: rgba(88, 88, 89,.8);
+    color: #ffffff; 
+}
+
+.modal-slideImg #nav_slide{
+width: 100%;
+bottom: 20%;
+height: 11px;
+position: absolute;
+text-align: center;
+z-index: 99;
+cursor: default;
+
+}
+
+#nav_slide .dots{
+
+width: 18px;
+height: 18px;
+margin: 0 5px;
+position: relative;
+border-radius: 100%;
+display: inline-block;
+background-color: rgba(180, 178, 178, 0.8);
+transition: .4s;
+}
+
+#nav_slide .dots:hover {
+cursor: pointer;
+background-color: rgba(88, 88, 89,.8);
+transition: .25s
+}
+
+.slide_img{
+    z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five
+{z-index: 9;}
+
+#i1:checked  ~  #nav_slide #dot1,
+#i2:checked  ~  #nav_slide #dot2,
+#i3:checked  ~  #nav_slide #dot3,
+#i4:checked  ~  #nav_slide #dot4,
+#i5:checked  ~  #nav_slide #dot5
+{ background-color: #f44336;}
+
+/*ix_ for 2nd project box*/
+#i1_:checked ~ #one_,
+#i2_:checked ~ #two_,
+#i3_:checked ~ #three_,
+#i4_:checked ~ #four_,
+#i5_:checked ~ #five_
+{z-index: 9;}
+
+#i1_:checked  ~  #nav_slide #dot1_,
+#i2_:checked  ~  #nav_slide #dot2_,
+#i3_:checked  ~  #nav_slide #dot3_,
+#i4_:checked  ~  #nav_slide #dot4_,
+#i5_:checked  ~  #nav_slide #dot5_
+{ background-color: #f44336;}
 
 
 
+@media screen and (max-width: 685px){  /* scales size of sidescroller bars */ 
+    .modal-slideImg{
+        border: none;
+        width: 100%;
+        height: 0;
+        padding-bottom: 55%; 
+    }	
+
+    label span { font-size: 50pt; }
+
+    .prev, .next{
+        width: 15%;
+    }	
+    #nav_slide .dots{
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media screen  and(min-width: 970px){
+    .me{ display: none;}
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*                                     imagescroller end                            */
+/* -------------------------------------------------------------------------------- */
+
+
+.modal .modal-content .modal-footer{
+    height: 60px; 
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+/*--------------------------------------------------------------
+could optimise this to have only 1 for each icon (not duplicated) 
++ not hardcoding the position of icons (4 below) 
+-----------------------------------------------------------------*/
+
+.modal .modal-content .modal-footer a .fab{
+    color: black;
+    position: absolute; 
+    right: 15px;
+    bottom: 15px;
+    font-size: 30px; /*this dictates the size of the icon*/
+}
+
+.modal .modal-content .modal-footer a .fas{
+    color: black;
+    position: absolute; 
+    /*further over :s need to sort as it wont work for other pages*/
+    /*further over :s need to sort as it wont work for other pages*/
+    right: 60px; /*further over :s need to sort as it wont work for other pages*/
+    /*further over :s need to sort as it wont work for other pages*/
+    /*further over :s need to sort as it wont work for other pages*/
+    bottom: 15px;
+    font-size: 30px; /*this dictates the size of the icon*/
+}
+
+.modal .modal-content .modal-footer a .fas:hover {
+    color:#f44336;
+}
+
+.modal .modal-content .modal-footer a .fab:hover {
+    color:#f44336;
+}
 
 
 
-/*third box third box third box third box third box third box third box */
-/*third box third box third box third box third box third box third box */
-/*third box third box third box third box third box third box third box */
-/*third box third box third box third box third box third box third box */
+#overlay {
+    /*z-index: 1;*/ z-index: 1;
+    display: none; /*change back to none change back to none change back to none change back to none*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+}
 
+#overlay.active {
+    display: block;
+}
+
+/* -------------------------------------------------------------------------------- */
+/*                                     modal end                                    */
+/* -------------------------------------------------------------------------------- */
