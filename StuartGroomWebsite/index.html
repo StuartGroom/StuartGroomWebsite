@@ -24,7 +24,7 @@
             <h2>
                 Hi, my name is
             </h2>
-            <h1> Stuart Groom. </h1>
+            <h1> Stuart Groom</h1>
             
             <h2> I'm a third year Computer Science student at the University of Liverpool</h2>
             <span class="anchor" id="home"></span>
@@ -116,8 +116,8 @@
                 </div>
             </a>
 
-            
-            <a href="#" onClick="myFunction()">
+            <!-- return false makes it so it doesnt jump to top of page on click of darkmode button-->
+            <a href="#" onClick="myFunction(); return false">
                 <div class="icon-box">
                     <div class="side-text" id ="dmSideText">
                         Dark Mode
@@ -173,7 +173,7 @@
             <div class="text-box">
                 <div class = projectsTitle> PROJECTS </projectsTitle>
                     
-
+                    
                 <div class =  horizontalLine>
                      </div>
                     
@@ -183,6 +183,8 @@
             
                     <div class="gallery">
                         
+                        <span class="anchor" id="projects"></span>
+
                         <div class="projectBox">
                             <img src="images/merseyTrains.png" />
                             <div class="span">
@@ -190,27 +192,26 @@
                                 <p2>Android/Java</p2>
             
                                 <button class="modal-open" data-target="#trainModal">Open Modal 1</button>
-                                <!--- <a class="btn" id="TrainBtn" href="#">LEARN MORE</a>
-                                    --->
+                                
             
                             </div>
                         </div>
-                        <span class="anchor" id="projects"></span>
-            
+                        
+                       
+
                         <div class="projectBox">
                             <img src="images/sortingAlgVisualisor.PNG" />
                             <div class="span">
                                 <p1>Sorting Algorithm Visualiser</p1>
-                                
-                                <p2><br>Python</p2>
+                                <br>
+                                <p2>Python</p2>
             
                                 <button class="modal-open" data-target="#project2Modal">Open Modal 2</button>
             
-                                <!---
-                                <a class="btn" id="Project2Btn" href="#">LEARN MORE</a> --->
+                                
                             </div>
                         </div>
-            
+                        
             
                         <div class="projectBox">
                             <img src="images/merseyTrains.png" />
@@ -226,8 +227,9 @@
             
                         </div>
                         
+                        
             
-                         
+                        
             
                     </div>
             
@@ -482,7 +484,7 @@
                 <div id="overlay"> </div>
             
             
-                <script src="JS.js"></script> <!-- used to link to javascript-->
+                
             
             </div>
         </div>
@@ -503,7 +505,7 @@
                         I have an in-depth knowledge of Java and Python languages and good knowledge of C, C++ and html/css, a working knowledge of javascript, along with a basic knowledge of SQL.
                         <br><br>
                         All modules have led me to develop a strong programming logic, by taking diverse modules and learning different programming languages and different software. I have also had practice in good coding and documentation practices throughout all modules to ensure my code produced is efficient and well explained. I have also developed my time management and organisational skills through having to manage lectures and several time-consuming coursework.
-                        
+
                     </p2>
 
                     <a class="btn" href="https://docs.google.com/spreadsheets/d/1tT6JtNTDmrExam7P-KMognJxSeSQN8EgZDFGGv-7XPU/edit#gid=0" target="_blank">Module List</a>
@@ -511,35 +513,220 @@
 
                     <div class="skillIcons">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+                        <span class="anchor" id="skills"></span>
+
+                        
+                        <div class="skillWrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
                     
+                            <div class="skillDescription">
+                                <h2> C </h2>
 
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+                                <p> 
+                                    Covered in module "Principles of C & Memory Management"
+                                </p>
+
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
                         
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+
+                        <div class="skillWrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
                         
+                            <div class="skillDescription">
+                                <h2> C++ </h2>
 
+                                <p>
+                                    Covered in module "Advanced Objected Oriented C Languages"
+                                </p>
 
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="skillWrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
                         
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                            <div class="skillDescription">
+                                <h2> C# </h2>
+
+                                <p>
+                                    Covered in module "Advanced Objected Oriented C Languages"
+                                </p>
+
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
 
 
+                            </div>
+                        </div>
 
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                        <div class="skillWrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                         
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                            <div class="skillDescription">
+                                <h2> HTML </h2>
+
+                                <p>
+                                    Learnt during the development of this website
+                                </p>
+
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="skillWrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+
+                            <div class="skillDescription">
+                                <h2> CSS </h2>
+
+                                <p>
+                                    Learnt during the development of this website
+                                </p>
+
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
 
 
+                            </div>
+                        </div>
+
+                        <div class="skillWrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                        
+                            <div class="skillDescription">
+                                <h2> Java </h2>
+
+                                <p>
+                                    The main programming language for most modules at the University of Liverpool
+                                </p>
+
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
 
 
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                        <div class="skillWrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+
+                            <div class="skillDescription">
+                                <h2> Javascript </h2>
+
+                                <p>
+                                    Basic knowledge, self taught through the development of this website
+                                </p>
+
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
                        
+                        <div class="skillWrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                       
+                            <div class="skillDescription">
+                                <h2> Python </h2>
+
+                                <p>
+                                    Learnt in GCSE, A-Level and used in the implementation of my Sorting Algorithm Visualiser (see github)
+                                </p>
+
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="skillWrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+
+                            <div class="skillDescription">
+                                <h2> GitHub </h2>
+
+                                <p>
+                                    Used briefly in my group software project in Year 2 of university. Knowledge expanded on during summer 2021 while learning to write this website and implementing the Sorting Algorithm Visualiser.
+                                </p>
+
+                                <a class="btn" href="https://github.com/StuartGroom?tab=repositories" target="_blank">Github</a>
+
+
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
                         
                     </div>
 
 
-                    <span class="anchor" id="skills"></span>
+                    
              </div>
          </div>
 
@@ -568,18 +755,9 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
-
+    <script src="JS.js"></script> <!-- used to link to javascript-->
 
 </body>
 
 
-
-
-    </html>
+</html>

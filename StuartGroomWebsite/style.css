@@ -3,12 +3,23 @@
 :root{
     --primary-color: white;
     --secondary-color: black;
+    --tertiary-color: #f44336;
 }
 
 .dark-mode{
-    --primary-color: black;
+    --primary-color: #595959;
     --secondary-color: white;
+    --tertiary-color: #EAFFFD; 
 }
+
+
+
+/*dark 
+background - 595959
+tiles - 7F7F7F
+
+
+*/
 
 body {
     padding: 0;
@@ -61,8 +72,8 @@ body {
     cursor: pointer;
 }
 
-.text-box .btn:hover {        /*this does nothing???*/
-    background: #f44336;
+.text-box .btn:hover {        
+    background: var(--tertiary-color);
     color: var(--primary-color);
 }
 
@@ -104,12 +115,13 @@ body {
     justify-content: flex-end;
     margin: 5px auto;
     text-align: center;
+    background-color: var(--tertiart-colour);
 }
 
 .side-text {
     min-width: 0px;
     height: 100%;
-    background: #f44336;
+    background: var(--tertiary-color);
     margin-right: 5px;
     line-height: 0;
     color: var(--primary-color);
@@ -135,26 +147,26 @@ body {
 /*make the icons red and spaced out nice*/
 .icon .fas {
     font-size: 20px;
-    color: #f44336;
+    color: var(--tertiary-color);
     line-height: 50px;
 }
 
 .icon .fab {
     font-size: 20px;
-    color: #f44336;
+    color: var(--tertiary-color);
     line-height: 50px;
 }
 
 .icon .far {
     font-size: 20px;
-    color: #f44336;
+    color: var(--tertiary-color);
     line-height: 50px;
 }
 
 
 /*when hover make icon background red*/
 .icon-box:hover .icon {
-    background-color: #f44336;
+    background-color: var(--tertiary-color);
 }
 
 /*when hover make icons white*/
@@ -211,7 +223,7 @@ body {
 
 /*makes the icon glow when hovered over*/
 .wrapper .socialSidebar ul li:hover a {
-    color: #f44336;
+    color: var(--tertiary-color);
     /*background: blue;*/
     top: 50px;
     transform: scale(1.5); /*enlarges icon by 150% when hovered over
@@ -275,13 +287,13 @@ body {
     width: 300px;
     position: relative;
     display: inline-block;
-    /*margin: 10px; /*can be used to make the photos spaced out*/
+    margin: 10px; /*can be used to make the photos spaced out*/
+
 }
 
 
 .gallery .projectBox img {
     width: 100%;
-    border: 2px solid var(--secondary-color);
     transition-duration: 0.5s;
     opacity: 1; 
 }
@@ -290,6 +302,7 @@ body {
 .gallery .projectBox:hover img {
     opacity: 0;
 }
+
 
 .gallery .projectBox .span {
     text-align: center;
@@ -305,14 +318,14 @@ body {
     margin: auto;
     font-size: 24px;
     line-height: 20px;
-    padding: 20px;
-    display: inline-block;
+    text-align: center;
+    
 }
 
 .gallery .projectBox .span p2 {
     margin: auto;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 40px;
     display: inline-block;
 }
 
@@ -336,26 +349,82 @@ body {
     color: var(--secondary-color);
     font-size: 20px;
     outline: none;
-    border: 2px solid #f44336;
+    border: 2px solid var(--tertiary-color);
     background: transparent;
     cursor: pointer;
 }
 
 .gallery .projectBox .span .modal-open:hover {
-    color: var(--secondary-color);
-    background: #f44336;
+    color: var(--primary-color);
+    background: var(--secondary-color);
 }
 
+
+/* -------------------------------------------------------------------------------- */
+/*                                   skills section                                 */
+/* -------------------------------------------------------------------------------- */
 
 
 .skillIcons{
     margin-top: 50px;
-    display: flexbox
+    display: inline-block;
+    text-align: center;
+    
+   
 }
 
 .skillIcons img{
     width: 100px;
 }
+
+
+.skillWrap{
+    position: relative;
+    display: inline-block;
+}
+
+.skillDescription {
+    
+    
+    height: 300px;
+    width: 300px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    
+    top: 100px;
+    bottom: 0;
+    
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    
+    
+    text-align: center;
+
+    visibility: hidden;
+    opacity: 0;
+    z-index: 100;
+    
+  }
+
+  .skillDescription .btn {
+      margin: auto;
+      margin-bottom: 20px;
+  }
+
+
+  .skillWrap:hover .skillDescription {
+    visibility: visible;
+    opacity: 1;
+    border: solid var(--secondary-color);
+    border-width: 1px;
+    
+  }
+
+
+
+
 
 
 
