@@ -141,7 +141,7 @@
                 <div class = "aboutMeP">
                     <img class="ProfilePic" alt="ProfilePic" src="images/ProfilePic.jpg">
                     <p2>
-                        I am a very hardworking and self-motivated student; I have just finished my second year at the University of Liverpool studying Computer Science. In my first year, I achieved a 68% overall and 77% for second year. I am aiming for a first-class degree at the end of my three years of study. My studies have allowed me to develop an in-depth understanding of multiple programming languages and to nurture a strong programming logic.
+                        I am a very hardworking and self-motivated student; I have just finished my second year at the University of Liverpool studying Computer Science. In my first year, I achieved a 68% overall and 76% for second year. I am aiming for a first-class degree at the end of my three years of study. My studies have allowed me to develop an in-depth understanding of multiple programming languages and to nurture a strong programming logic.
                         <br><br>
                         I am hoping to gain experience in software development and gain insight into the various branches of this field as well as further develop my programming skills.
                         <br><br>
@@ -214,10 +214,10 @@
                         
             
                         <div class="projectBox">
-                            <img src="images/merseyTrains.png" />
+                            <img src="images/OthelloBoard.PNG" />
                             <div class="span">
-                                <p1>MerseyTrainsLive</p1>
-                                <p2>Android/Java</p2>
+                                <p1>Othello AI</p1>
+                                <p2>Java/Machine Learning</p2>
             
                                 <button class="modal-open" data-target="#project3Modal">Open Modal 3</button>
             
@@ -326,11 +326,7 @@
                         
                         <div class="modal-footer">
                            
-                            <!--- google slides for project ---> 
-                            <a link href="https://docs.google.com/presentation/d/1y5h-vfvUaLdy8NCsjjkIqwD47NtZ_nLodaL-_Tcn7eE/edit#slide=id.p
-                            " target="_blank"> 
-                                <i class="fas fa-file-powerpoint"></i>
-                            </a>
+                            
             
                             <!--- target=blank so it opens in new tab ---> 
                             <!--- github for project ---> 
@@ -338,7 +334,11 @@
                                 <i class="fab fa-github"></i>
                             </a>
                             
-            
+                            <!--- google slides for project ---> 
+                            <a link href="https://docs.google.com/presentation/d/1y5h-vfvUaLdy8NCsjjkIqwD47NtZ_nLodaL-_Tcn7eE/edit#slide=id.p
+                            " target="_blank"> 
+                                <i class="fas fa-file-powerpoint"></i>
+                            </a>
             
             
               
@@ -445,40 +445,106 @@
             
                 <div class="modal" id="project3Modal">
                     <div class="modal-content">
-                        
                         <div class="modal-header">
             
-                            
-                            <h2>Project 3</h2>
-            
+                            <h2>OthelloAI</h2>
             
                             <button class="modal-close" data-target="#project3Modal">
                                 &times;
                             </button>
-            
-            
                         </div>
             
-                        <div class="modal-body">
-                            <img src="images/merseyTrains.png" />
-                            <p> idem espum 3  </p>
+            
+            
+                        <div class="modal-slideImg">
+                            
+                            <input type="radio" id="i1__" name="images" checked />
+                            <input type="radio" id="i2__" name="images" />
+                            <input type="radio" id="i3__" name="images" />
+                            <input type="radio" id="i4__" name="images" />
+                            <input type="radio" id="i5__" name="images" />	
+            
+            
+                            <div class="slide_img" id="one__">			
+                        
+                                <img src="images/othelloSlide1.PNG">
+                                
+                                    <label class="prev" for="i5__"><span>&#x2039;</span></label>
+                                    <label class="next" for="i2__"><span>&#x203a;</span></label>	
+                            
+                            </div>
+                            
+                            <div class="slide_img" id="two__">
+                                
+                                    <img src="images/othelloSlide2.PNG" >
+                                    
+                                        <label class="prev" for="i1__"><span>&#x2039;</span></label>
+                                        <label class="next" for="i3__"><span>&#x203a;</span></label>
+                                
+                            </div>
+                                    
+                            <div class="slide_img" id="three__">
+                                    <img src="images/othelloSlide3.PNG">	
+                                    
+                                        <label class="prev" for="i2__"><span>&#x2039;</span></label>
+                                        <label class="next" for="i4__"><span>&#x203a;</span></label>
+                            </div>
+            
+                            <div class="slide_img" id="four__">
+                                <img src="images/othelloSlide4.PNG">	
+                                
+                                    <label class="prev" for="i3__"><span>&#x2039;</span></label>
+                                    <label class="next" for="i5__"><span>&#x203a;</span></label>
+                            </div>
+            
+                            <div class="slide_img" id="five__">
+                                <img src="images/othelloSlide5.PNG">	
+                                
+                                    <label class="prev" for="i4__"><span>&#x2039;</span></label>
+                                    <label class="next" for="i1__"><span>&#x203a;</span></label>
+                            </div>
+            
+                            <div id="nav_slide">
+                                <label for="i1__" class="dots" id="dot1__"></label>
+                                <label for="i2__" class="dots" id="dot2__"></label>
+                                <label for="i3__" class="dots" id="dot3__"></label>
+                                <label for="i4__" class="dots" id="dot4__"></label>
+                                <label for="i5__" class="dots" id="dot5__"></label>
+                            </div>
+            
             
                         </div>
             
                         <div class="modal-footer">
-                            
+            
                             <!--- change href to be the git repository for the project ---> 
-                            <a link href="#"> 
+                            <a link href="" target="_blank"> 
                                 <i class="fab fa-github"></i>
                             </a>
-                            
             
+                            <a link href="https://drive.google.com/file/d/1-W3YwCMCu4RHDFCbnTaDWtFteld5_oAC/view?usp=sharing" target="_blank"> 
+                                <i class="far fa-file-word"></i>
+                            </a>
+
+                            <a link href="https://docs.google.com/document/d/16AJ7j6RFxI7EGEcvMQKslHXeE50OTDacxDhFUJVzFMw/edit?usp=sharing" target="_blank"> 
+                                <i class="far fa-comment"></i>
+                            </a>
+
+                            
+                            
+
+                            
+
                         </div>
             
                     </div>
             
                 </div>
-            
+
+
+
+
+            <!-- end of model 3 -->
                 
             
                 <div id="overlay"> </div>

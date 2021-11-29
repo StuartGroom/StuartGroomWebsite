@@ -356,7 +356,7 @@ body {
 
 .gallery .projectBox .span .modal-open:hover {
     color: var(--primary-color);
-    background: var(--secondary-color);
+    background: var(--tertiary-color);
 }
 
 
@@ -614,6 +614,21 @@ transition: .25s
 #i5_:checked  ~  #nav_slide #dot5_
 { background-color: #f44336;}
 
+/*ix__ for 3nd project box*/
+#i1__:checked ~ #one__,
+#i2__:checked ~ #two__,
+#i3__:checked ~ #three__,
+#i4__:checked ~ #four__,
+#i5__:checked ~ #five__
+{z-index: 9;}
+
+#i1__:checked  ~  #nav_slide #dot1__,
+#i2__:checked  ~  #nav_slide #dot2__,
+#i3__:checked  ~  #nav_slide #dot3__,
+#i4__:checked  ~  #nav_slide #dot4__,
+#i5__:checked  ~  #nav_slide #dot5__
+{ background-color: #f44336;}
+
 
 
 @media screen and (max-width: 685px){  /* scales size of sidescroller bars */ 
@@ -650,6 +665,8 @@ transition: .25s
     width: 100%;
     bottom: 0;
     position: fixed;
+    text-align: right;
+    right: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -657,27 +674,21 @@ could optimise this to have only 1 for each icon (not duplicated)
 + not hardcoding the position of icons (4 below) 
 -----------------------------------------------------------------*/
 
-.modal .modal-content .modal-footer a .fab{
+.modal .modal-content .modal-footer a{
     color: black;
-    position: absolute; 
     right: 15px;
     bottom: 15px;
     font-size: 30px; /*this dictates the size of the icon*/
+    display: inline-block;
+    
 }
 
-.modal .modal-content .modal-footer a .fas{
-    color: black;
-    position: absolute; 
-    /*further over :s need to sort as it wont work for other pages*/
-    /*further over :s need to sort as it wont work for other pages*/
-    right: 60px; /*further over :s need to sort as it wont work for other pages*/
-    /*further over :s need to sort as it wont work for other pages*/
-    /*further over :s need to sort as it wont work for other pages*/
-    bottom: 15px;
-    font-size: 30px; /*this dictates the size of the icon*/
-}
 
 .modal .modal-content .modal-footer a .fas:hover {
+    color:#f44336;
+}
+
+.modal .modal-content .modal-footer a .far:hover {
     color:#f44336;
 }
 
