@@ -33,7 +33,7 @@ function myFunction() {
 
   }
 
-  const btns = document.querySelectorAll(".modal-open");
+const btns = document.querySelectorAll(".modal-open");
 const close_btns = document.querySelectorAll(".modal-close");
 const overlay = document.getElementById("overlay");
 
