@@ -13,14 +13,6 @@
 }
 
 
-
-/*dark 
-background - 595959
-tiles - 7F7F7F
-
-
-*/
-
 body {
     padding: 0;
     margin: 0;
@@ -530,27 +522,6 @@ input[type="radio"] { display: none; }  /* hides the inbuilt radio buttons (img 
     cursor: pointer;
     text-align: center;
 }
-
- /* .modal .iframeBackground .iframeContainer {
-    position: relative; 
-    
-} 
-
- .modal .iframeBackground .iframeContainer .iframe{
-    
-    position: relative;
-    left: 67px;
-    top: 109px;
-    width:277px;
-    height:150px;
-}
-
-.modal .iframeBackground {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-} */
 
 .next{
     right:0;
